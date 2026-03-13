@@ -10,4 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: abaplint/actions@v1
+      - name: abaplint
+        uses: abaplint/abaplint@v2
+        with:
+          abaplint_version: latest
