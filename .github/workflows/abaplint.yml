@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: abaplint
-        uses: abaplint/abaplint@v2
-        with:
-          abaplint_version: latest
+        run: |
+          npm install -g @abaplint/cli
+          abaplint
